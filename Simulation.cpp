@@ -43,6 +43,8 @@ void Simulation::stop()
 	}
 	this->displaying = false;
 	this->displayThread->join();
+	clear();
+	endwin();
 }
 
 
